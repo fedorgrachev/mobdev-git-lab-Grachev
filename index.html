@@ -1,109 +1,36 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta
-            name="description"
-            content="Агентство веб-разработки - создаем современные сайты" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Веб-Агентство</title>
-        <link rel="stylesheet" href="styles.css" />
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учебный чат</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
         <header class="header">
-            <h1 class="logo">WebAgency</h1>
-            <nav class="main-nav">
-                <ul class="nav-list">
-                    <li><a href="#about" class="nav-link">О нас</a></li>
-                    <li><a href="#services" class="nav-link">Услуги</a></li>
-                    <li><a href="#portfolio" class="nav-link">Портфолио</a></li>
-                    <li><a href="#testimonials" class="nav-link">Отзывы</a></li>
-                    <li><a href="#contact" class="nav-link">Контакты</a></li>
-                </ul>
-            </nav>
+            <nav class="nav">Навигация</nav>
+            <h1 class="title">Учебный Чат</h1>
+            <div class="user-widget">Профиль</div>
         </header>
-
-        <section class="hero-section">
-            <h2 class="hero-title">Создаем современные и удобные сайты</h2>
-            <p class="hero-text">
-                Профессиональная веб-разработка для вашего бизнеса
-            </p>
-            <button class="btn primary">Заказать сайт</button>
-        </section>
-
-        <section class="about-section" id="about">
-            <h2>О нас</h2>
-            <p>
-                Мы - команда профессионалов, разрабатывающая стильные и
-                функциональные сайты.
-            </p>
-            <img src="assets/team.jpg" alt="Наша команда" class="about-image" />
-        </section>
-
-        <section class="services-section" id="services">
-            <h2>Наши услуги</h2>
-            <ul class="services-list">
-                <li class="service-item">Дизайн и разработка</li>
-                <li class="service-item">SEO-оптимизация</li>
-                <li class="service-item">Поддержка и обслуживание</li>
-                <li class="service-item">Аналитика и маркетинг</li>
+        
+        <aside class="chat-list">
+            <ul>
+                <li>Чат 1</li>
+                <li>Чат 2</li>
+                <li>Чат 3</li>
             </ul>
-        </section>
-
-        <section class="portfolio-section" id="portfolio">
-            <h2>Наши работы</h2>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <img src="assets/project1.webp" alt="Проект 1" />
-                </div>
-                <div class="portfolio-item">
-                    <img src="assets/project2.png" alt="Проект 2" />
-                </div>
-                <div class="portfolio-item">
-                    <img src="assets/project3.png" alt="Проект 3" />
-                </div>
+        </aside>
+        
+        <main class="chat-window">
+            <div class="messages">
+                <div class="message">Привет! Как дела?</div>
+                <div class="message message--foreign">Привет! Всё отлично, спасибо!</div>
             </div>
-        </section>
-
-        <section class="testimonials-section" id="testimonials">
-            <h2>Отзывы клиентов</h2>
-            <blockquote class="testimonial">
-                <p>"Отличная работа! Сайт сделали быстро и качественно."</p>
-                <cite class="testimonial-author">— Иван Петров, CEO</cite>
-            </blockquote>
-        </section>
-
-        <footer class="footer-section" id="contact">
-            <h2>Контакты</h2>
-            <div class="contact-info">
-                <p>
-                    Email:
-                    <a href="mailto:contact@webagency.com">
-                        contact@webagency.com
-                    </a>
-                </p>
-                <p>
-                    Телефон:
-                    <a href="tel:+79991234567">+7 999 123 45 67</a>
-                </p>
-            </div>
-            <form class="contact-form">
-                <input
-                    type="text"
-                    name="name"
-                    placeholder="Ваше имя"
-                    class="form-input" />
-                <input
-                    type="email"
-                    name="email"
-                    placeholder="Ваш email"
-                    class="form-input" />
-                <textarea
-                    name="message"
-                    placeholder="Ваше сообщение"
-                    class="form-textarea"></textarea>
-                <button type="submit" class="btn submit">Отправить</button>
-            </form>
-        </footer>
-    </body>
+            <input type="text" class="message-input" placeholder="Введите сообщение...">
+        </main>
+        
+        <footer class="footer">© 2026 Учебный Чат</footer>
+    </div>
+</body>
 </html>
